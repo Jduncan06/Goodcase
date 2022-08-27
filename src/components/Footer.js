@@ -1,15 +1,36 @@
-import { Navbar, NavbarBrand, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+
 
 const Footer = () =>{
+    return(
     <footer className="site-footer">
         <Container>
             <Row>
                 <Col>
-            
+                    <h5>Social</h5>
+                    <a
+                        className='btn btn-social-icon btn-instagram'
+                        href='http://instagram.com/ventshowlive'
+                    >
+                        <i className='fa fa-instagram' />
+                    </a>{' '}
+                    <a
+                        className='btn btn-social-icon btn-twitter'
+                        href='http://twitter.com/ventshowlive'
+                    >
+                        <i className='fa fa-twitter' />
+                    </a>{' '}
+                    <a
+                        className='btn btn-social-icon btn-google'
+                        href='http://youtube.com/watch?v=CTT2-31gANI'
+                    >
+                        <i className='fa fa-youtube' />
+                    </a>
                 </Col>
             </Row>
         </Container>
     </footer>
+    );
 };
 
 export default Footer;
