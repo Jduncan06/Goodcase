@@ -7,7 +7,6 @@ const Footer = () =>{
         <Container>
             <Row>
                 <Col>
-                    <h5>Social</h5>
                     <a
                         className='btn btn-social-icon btn-instagram'
                         href='http://instagram.com/ventshowlive'
