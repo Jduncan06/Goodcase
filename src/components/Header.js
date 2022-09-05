@@ -15,13 +15,13 @@ const Header = () =>{
                     <Collapse isOpen={menuOpen} navbar>
                         <Nav className='ms-auto' navbar>
                             <NavItem>
-                                <NavLink className='nav-link' to='/#About'>
-                                    About
+                                <NavLink className='nav-link' to='/#Shows'>
+                                    Shows
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className='nav-link' to='/#Shows'>
-                                    Shows
+                                <NavLink className='nav-link' to='/#About'>
+                                    About
                                 </NavLink>
                             </NavItem>
                             <NavItem>

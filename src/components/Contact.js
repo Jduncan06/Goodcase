@@ -1,15 +1,12 @@
-import { Container, Row, Col, Button } from "reactstrap";
+import { Row, Col, Button } from "reactstrap";
 import banter from "../app/assets/img/banter.png";
 
 const Contact = () => {
   return (
-    <Container className="contact" id="Contact">
+    <div className="contact" id="Contact">
       <Row>
-        <Col className="background">
-          <h1 className="me-auto contentRight">Contact Us</h1>
-          <img src={banter} alt="banter" className="pic md-4" />
-        </Col>
-        <Col className=" align-center">
+        
+        <Col className=" contentContactText">
           NEED TO VENT?
           <br />
           PRIVATE EVENT BOOKING
@@ -24,9 +21,13 @@ const Contact = () => {
           <br />
           <Button>Book an Event</Button>
         </Col>
+        <Col className="background">
+          <h1 className=" contentContact">Contact Us</h1>
+          <img src={banter} alt="banter" className="contactPic md-4" />
+        </Col>
       </Row>
       <hr />
-    </Container>
+    </div>
   );
 };
 
