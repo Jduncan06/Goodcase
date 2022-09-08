@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "reactstrap";
+import {youtube} from '../app/assets/img/youtube.png'
 
 const Footer = () => {
   return (
@@ -7,19 +8,19 @@ const Footer = () => {
         <Row>
           <Col>
             <a
-              className="btn btn-social-icon btn-google"
+              className="btnYoutube"
               href="http://youtube.com/watch?v=CTT2-31gANI"
             >
-              <i className="fa fa-youtube" />
-            </a>
+              <i className="fa fa-youtube-play" />
+            </a>{" "}
             <a
-              className="btn btn-social-icon btn-instagram"
+              className=" btnInstagram"
               href="http://instagram.com/ventshowlive"
             >
               <i className="fa fa-instagram" />
             </a>{" "}
             <a
-              className="btn btn-social-icon btn-twitter"
+              className="btnTwitter"
               href="http://twitter.com/ventshowlive"
             >
               <i className="fa fa-twitter" />

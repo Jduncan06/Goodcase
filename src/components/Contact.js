@@ -6,24 +6,25 @@ const Contact = () => {
     <div className="contact" id="Contact">
       <Row>
         
-        <Col className=" contentContactText">
-          NEED TO VENT?
+        
+        <Col className="background" xs='12' md='7'>
+          <img src={banter} alt="banter" className="contactPic md-4" />
+        </Col>
+        <Col className=" contentContactText" xs='12' md='5'>
+          <h1>PRIVATE EVENT BOOKING</h1>
           <br />
-          PRIVATE EVENT BOOKING
-          <br />
-          The creators of the VENT! Show want to come perform our show for your
+          <p>The creators of the VENT! Show want to come perform our show for your
           private party. Book us for birthdays, office parties, retirement
           parties, and more. We’ll provide the comedians and show materials. You
           provide the audience.
+          </p>
           <br />
+          <p>
           If you have any questions, contact the VENT! Live Team at
           ventlive@gmail.com
+          </p>
           <br />
           <Button>Book an Event</Button>
-        </Col>
-        <Col className="background">
-          <h1 className=" contentContact">Contact Us</h1>
-          <img src={banter} alt="banter" className="contactPic md-4" />
         </Col>
       </Row>
       <hr />

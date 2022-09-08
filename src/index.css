@@ -3,32 +3,39 @@ body {
   font-family: 'Oswald', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 Header{
   background-color: rgba(0, 0, 0, 0);
-  color: white;
-  z-index: 5;
+  margin: 0;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    overflow-x: hidden;
+    
+}
+
+.dates{
+  margin-top: 2rem;
+  height: 100/0
 }
 
 .videoBackground{
   position: relative;
   margin:0;
   padding:0;
-  height: 100%;
+  height: 50%;
   width: 100%;
+  opacity: 35%
 }
 .background{
-  position: relative;
+  position:relative;
   margin:0;
   padding:0;
   height: 100%;
-  width:100%;
+  width:99%;
 }
 .content{
   position: absolute;
@@ -37,15 +44,16 @@ code {
   z-index:3;
   top:0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
-  margin: 0;
   padding:0;
   font-family: 'Oswald', sans-serif;
   font-size:40pt;
 }
+
 .contentShows{
   position: absolute;
   width: 100%;
@@ -53,42 +61,13 @@ code {
   z-index:3;
   top:0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  color: white;
-  margin: 0;
-  padding:0;
-}
-
-.contentAboutText{
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  z-index:3;
-  top:0;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  
   align-items: flex-start;
   color: white;
   margin: 0;
-  padding:0;
-}
-
-.contentAbout{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index:3;
-  top:0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  color: white;
-  margin: 0;
+  margin-right: 1rem;
   padding:0;
 }
 
@@ -99,21 +78,23 @@ code {
   z-index:3;
   top:0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   color: white;
   margin: 0;
-  padding: right 500px;
+  padding:0;
 }
 
 .contentVent{
   position: absolute;
   width: 100%;
-  height: 100%;
-  z-index:3;
+  height: 90%;
+  z-index: index 3;
   top:0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -123,31 +104,58 @@ code {
 }
 
 .showsPic{
-  height: 75%;
+  height: 100%;
   width: 100%;
-  opacity: 0.25;
+  opacity: 0.45;
   margin-left: 0;
   padding-left: 0;
 }
 
 .aboutPic{
   flex: content;
-  width:85%;
-  overflow-x: hidden;
+  flex-wrap: wrap;
+  width:100%;
   align-items: flex-end;
-  opacity: 0.25;
+  padding: 0;
+  margin: 0;
+  opacity: 0.45;
+}
+.aboutRow{
+  overflow-x: hidden;
 }
 
 .ventPic{
+  width:50%;
+  height:50%;
+  display: flex;
+  flex-wrap: wrap;
   overflow-x: hidden;
-  opacity: 0.25;
+  align-items: flex-end;
+}
+.overlay{
+  opacity: 0.45;
+}
+.ventForm{
+  width: 100%;
+  height: 10/0%;
+  z-index: index 4;;
+  top:0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color: white;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
 }
 
 .contactPic{
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  opacity: 0.25;
+  opacity: 0.45;
   margin-left: 0;
   padding-left: 0;
 }
@@ -166,16 +174,20 @@ code {
 .logo{
   position: absolute;
   width: 45%;
-  height: 35%;
+  height: 45%;
   z-index:3;
   top:0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
-  margin: 0;
+  margin-left: 2rem;
+  margin-top: 1rem;
   padding:0;
+  height: 25%;
+  width: 35%;
 
 }
 .about{
@@ -190,14 +202,20 @@ code {
   margin: 0px;
   padding: 0px;
 }
-.site-footer{
 
+.site-footer{
   background-color:rgba(0, 0, 0, 0);
 }
-
-.dates{
-  flex-direction:column;
-  align-items: center;
-  display: flex;
+.btnYoutube{
+  color:red;
+  font-size: xx-large;
 }
 
+.btnInstagram{
+  color: #C13584;
+  font-size: xx-large;
+}
+.btnTwitter{
+  color:#1DA1F2;
+  font-size: xx-large;
+}
