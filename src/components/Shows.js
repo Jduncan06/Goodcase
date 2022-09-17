@@ -1,31 +1,20 @@
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import Host from "../app/assets/img/Host.JPG";
+import DatesList from "../features/dates/DatesList";
 const Shows = () => {
   return (
-    <div id="Shows">
-      <Row>
+    
+      <Row id='Shows'>
         <Col className="background" md="6" xs="12">
-          <img src={Host} alt="host" className="showsPic" background/>
+          <img src={Host} alt="host" className="showsPic"/>
           <h1 className='contentShows'>Upcoming Shows</h1>
         </Col>
-        <Col className="dates" md="6" xs="12">
-          <div>
-            Date 1 <Button>Buy Tickets</Button>
-          </div>
-          <hr />
-
-          <div>
-            Date 2 <Button>Buy Tickets</Button>
-          </div>
-          <hr />
-
-          <div>
-            Date 3 <Button>Buy Tickets</Button>
-          </div>
+        <Col  className="dates" md="6" xs="12">
+          <DatesList/>
         </Col>
+        <hr/>
       </Row>
-      <hr />
-    </div>
+      
   );
 };
 

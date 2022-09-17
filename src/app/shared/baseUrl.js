@@ -1,0 +1,1 @@
+export const baseUrl = 'https://www.eventbriteapi.com/v3/240511435177'

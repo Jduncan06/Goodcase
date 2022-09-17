@@ -1,35 +1,36 @@
-import {Row, Col} from "reactstrap";
+import { Row, Col } from "reactstrap";
 import max from "../app/assets/img/max.jpg";
+import AboutTxt from "../features/about/AboutTxt";
 
 const About = () => {
-  return (
-    <>
-   
-    <div className="about" id="About">
-      <Row>
-        <Col xs='12' md='6'>
-          <h1>What is Vent!</h1>
-          <p>
-            VENT! IS AN INTERACTIVE COMEDY VARIETY SHOW. Comedians unpack your
-            gripes, grievances, rants, and raves. Come ready to submit your
-            vents! The rest of the world might not care about your meaningless
-            problems, but we do!
-          </p>
-          <br />
-          <br />
-          <p className="d-none d-md-block">
-            “We had a phenomenal time and laughed so hard. I think that is the
-            first good workout my abs have had in a while!” — Ellen
-          </p>
-        </Col>
-        <Col xs='12' md='6'>
-          <img src={max} alt="max" className=" aboutPic" />
-        </Col>
-        <hr />
-      </Row>
-    </div>
-    </>
-  );
+  if (window.width >= 576) {
+    return (
+      <div className="about" id="About">
+        <Row>
+        <Col xs="12" md="6 order-1">
+          <AboutTxt />
+          </Col>
+          <Col xs="12" md="6 ">
+            <img src={max} alt="max" className=" aboutPic" />
+          </Col>
+        </Row>
+      </div>
+    );
+  } else {
+    return (
+      <div className="about" id="About">
+        <Row>
+          <Col xs="12 order-1" md="6">
+            <img src={max} alt="max" className=" aboutPic" />
+          </Col>
+          <Col xs="12" md="6 ">
+          <AboutTxt />
+          </Col>
+        </Row>
+        <hr/>
+      </div>
+    );
+  }
 };
 
 export default About;
