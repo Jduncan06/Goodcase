@@ -6,9 +6,9 @@ const About = () => {
   if (window.width >= 576) {
     return (
       <div className="about" id="About">
-        <Row>
-        <Col xs="12" md="6 order-1">
-          <AboutTxt />
+        <Row className="row">
+          <Col xs="12" md="6 order-1">
+            <AboutTxt />
           </Col>
           <Col xs="12" md="6 ">
             <img src={max} alt="max" className=" aboutPic" />
@@ -24,10 +24,10 @@ const About = () => {
             <img src={max} alt="max" className=" aboutPic" />
           </Col>
           <Col xs="12" md="6 ">
-          <AboutTxt />
+            <AboutTxt />
           </Col>
         </Row>
-        <hr/>
+        <hr />
       </div>
     );
   }

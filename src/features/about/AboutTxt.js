@@ -16,7 +16,7 @@ const AboutTxt = () => {
         “We had a phenomenal time and laughed so hard. I think that is the first
         good workout my abs have had in a while!” — Ellen
       </p>
-      </>
+    </>
   );
 };
 
