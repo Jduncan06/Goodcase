@@ -1,15 +1,14 @@
 import { Container, Row, Col } from "reactstrap";
-import {youtube} from '../app/assets/img/youtube.png'
 
 const Footer = () => {
   return (
     <footer className="site-footer">
-      <Container>
-        <Row>
-          <Col>
+      <Container className="socialContainer">
+        <Row style={{height:'50%'}}>
+          <Col style={{height:'50%'}}>
             <a
               className="btnYoutube"
-              href="http://youtube.com/watch?v=CTT2-31gANI"
+              href="https://www.youtube.com/channel/UC_tWt7pYW8k9qcqbe--JXWw"
             >
               <i className="fa fa-youtube-play" />
             </a>{" "}

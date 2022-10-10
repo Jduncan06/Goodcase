@@ -1,1 +1,1 @@
-export const baseUrl = 'https://www.eventbriteapi.com/v3/240511435177'
+export const baseUrl = "https://docs.google.com/spreadsheets/d/1kJMYOqRwKhN2c0wJQyp03lduto7ECAVDLhhGTtEAz9o/pub?output=csv"

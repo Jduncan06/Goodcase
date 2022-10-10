@@ -8,19 +8,31 @@ const Tagline = () => {
     <div className="tagLine">
       <video src={ventPromo} loop autoPlay muted className="videoBackground" />
       <img src={fullLogo} alt="logo" className="logo d-none d-md-block" />
+      <div className="contentContainer">
       <Col className="content">
-        <h1 className="comedians ms-xs-1 ms-md-5 mt-xs-0">
-          COMEDIANS
+        <h1 className="comedians">
+          COMEDIANS<br/>
+         
+          <span className="unpack">UNPACK</span>
+          
           <br />
-          <span className="unpack ms-xs-1 ms-md-5 mt-xs-0">UNPACK</span>
+          <span className="gripes">YOUR GRIPES!</span>
           <br />
-          Your Gripes!
-          <br />
+          
           <a href="/#Shows">
-            <Button className="btn">Get Tickets!</Button>
+            <Button
+              className="button btn"
+              style={{
+                backgroundColor: "#F16A74",
+                border: "solid 1px #F16A74",
+              }}
+            >
+              Get Tickets!
+            </Button>
           </a>
-        </h1>
-      </Col>
+          </h1>
+        </Col>
+      </div>
       <hr />
     </div>
   );

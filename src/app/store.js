@@ -1,8 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
+import { getDefaultNormalizer } from '@testing-library/react';
+import { showsReducer } from '../features/dates/datesSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    shows: showsReducer
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });

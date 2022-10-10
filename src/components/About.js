@@ -20,10 +20,10 @@ const About = () => {
     return (
       <div className="about" id="About">
         <Row>
-          <Col xs="12 order-1" md="6">
+          <Col xs="12 order-1" md="8">
             <img src={max} alt="max" className=" aboutPic" />
           </Col>
-          <Col xs="12" md="6 ">
+          <Col xs="12" md="4 ">
             <AboutTxt />
           </Col>
         </Row>
