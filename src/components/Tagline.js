@@ -1,27 +1,14 @@
 import React from "react";
-import { Col, Button } from "reactstrap";
-import fullLogo from '../app/assets/img/fullLogo.png';
-import ventPromo from "../app/assets/ventPromo.mp4";
-
+import { Col } from "reactstrap";
+import Couch from "../app/assets/img/Couch.jpg";
 
 const Tagline = () => {
   return (
     <div className="tagLine">
-    
-      <video src={ventPromo} loop autoPlay muted className="videoBackground"/>
-      <img src={fullLogo} alt='logo' className='logo d-none d-md-block' />
-      
+      <img src={Couch} className="headshotBackground" alt="headshot" />
       <Col className="content">
-        <h1 className="comedians ms-xs-1 ms-md-5 mt-xs-0">COMEDIANS
-        <br/>
-        <span className="unpack ms-xs-1 ms-md-5 mt-xs-0">UNPACK</span>
-        <br/>
-        Your Gripes!<br/>
-        <a href='/#Shows'><Button className="btn">Get Tickets!</Button></a>
-        </h1>
-        
+        <h1 style={{fontSize: '50pt'}}>Ryan Goodcase</h1>
       </Col>
-      <hr/>
     </div>
   );
 };

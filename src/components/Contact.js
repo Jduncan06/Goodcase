@@ -1,29 +1,20 @@
 import { Row, Col, Button } from "reactstrap";
-import banter from "../app/assets/img/banter.png";
+import SweaterClose from "../app/assets/img/SweaterClose.jpg";
+import ContactForm from "../app/utils/ContactForm";
 
 const Contact = () => {
   return (
     <div className="contact" id="Contact">
       <Row id="Contact">
-        <Col className=" contentContactText" xs="12" md="5">
-          <h1>PRIVATE EVENT BOOKING</h1>
-          <br />
-          <p>
-            The creators of the VENT! Show want to come perform our show for
-            your private party. Book us for birthdays, office parties,
-            retirement parties, and more. We’ll provide the comedians and show
-            materials. You provide the audience.
-          </p>
-          <br />
-          <p>
-            If you have any questions, contact the VENT! Live Team at
-            ventlive@gmail.com
-          </p>
-          <br />
-          <Button>Book an Event</Button>
+        
+        <Col className="background" xs="12" md="6">
+        <h1 className="contentContact">Contact Me</h1>
+          <img src={SweaterClose} alt="sweater" className="contactPic md-4" />
         </Col>
-        <Col className="background" xs="12" md="7">
-          <img src={banter} alt="banter" className="contactPic md-4" />
+        <Col className=" contentContactText" xs="12" md="6">
+          <br/>
+          <h5>I'm kind of shy, message me first?</h5>
+        <ContactForm/>
         </Col>
       </Row>
       <hr />

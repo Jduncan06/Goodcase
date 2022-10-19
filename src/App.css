@@ -14,6 +14,7 @@
   }
 }
 
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -24,9 +25,6 @@
   background-color: none;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
 
 @keyframes App-logo-float {
   0% {

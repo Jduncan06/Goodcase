@@ -1,22 +1,34 @@
 import { Col } from "reactstrap";
+import Papa from "papaparse";
+import { useEffect, useState } from "react";
 
 const AboutTxt = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    Papa.parse(
+      "https://docs.google.com/spreadsheets/d/1t-QDGkWHJNV-4sMCreooUixcQMX07kUXexgC4Hp9VPU/pub?output=csv",
+      {
+        download: true,
+        header: true,
+        complete: (results) => {
+          setData(results.data);
+        },
+      }
+    );
+  });
+
+  const about = Array.from(data);
   return (
     <>
-      <h1>What is Vent!</h1>
-      <p>
-        VENT! IS AN INTERACTIVE COMEDY VARIETY SHOW. Comedians unpack your
-        gripes, grievances, rants, and raves. Come ready to submit your vents!
-        The rest of the world might not care about your meaningless problems,
-        but we do!
-      </p>
+      <h1>My Story</h1>
+      {about.map((item, i) => (
+        <Col style={{margin:'2rem'}}>
+          <p key={i}>{item.aboutText}</p>
+        </Col>
+      ))}
       <br />
       <br />
-      <p className="d-none d-md-block">
-        “We had a phenomenal time and laughed so hard. I think that is the first
-        good workout my abs have had in a while!” — Ellen
-      </p>
-      </>
+    </>
   );
 };
 
