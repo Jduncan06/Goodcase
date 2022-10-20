@@ -2,13 +2,12 @@ import { useState, useRef } from "react";
 import { FormGroup, Label, Button } from "reactstrap";
 import { Formik, Field, Form } from "formik";
 
-
 const ContactForm = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbyZiyMDBZt9SJQeU-7V2WchXRGCgkXqxa5oKnqrvp-WQjIjTPDPbVTJ4brij4QVYLArRQ/exec";
+    "https://script.google.com/macros/s/AKfycbxpablIUdnnxPgAGxQ5vW0lZhcwA5FphtnyRFCyQFhoC-JaTe-1fzopRxQkIBQtbXVI/exec";
 
   const btnText = () => {
     if (loading) {
@@ -32,71 +31,79 @@ const ContactForm = () => {
       })
       .catch((err) => console.log(err));
   };
-    return (
-      <Formik
+  return (
+    <Formik
       initialValues={{
-        Name: '',
-        Email: '',
-        Location: '',
-        Comments: '',
+        Name: "",
+        Email: "",
+        Location: "",
+        Comments: "",
       }}
+    >
+      <Form
+        method="post"
+        ref={formRef}
+        name="google-sheet"
+        className="contactForm"
+        onSubmit={handleSubmit}
       >
-        <Form
-          method="post"
-          ref={formRef}
-          className="contactForm"
-          onSubmit={handleSubmit}
-        >
-          <FormGroup>
-            <Label htmlFor="Name">Name? Or whatever you want me to call you in your email</Label>
-            <Field
-            type='text'
-            name='Name'
+        <FormGroup>
+          <Label htmlFor="Name">
+            Name? Or whatever you want me to call you in your email
+          </Label>
+          <Field
+            type="text"
+            name="Name"
+            id="Name"
             placeholder="Your Name"
             className="form-control"
-            
-            />
-          </FormGroup>
-          <FormGroup>
+          />
+        </FormGroup>
+        <FormGroup>
           <Label htmlFor="Email">Email</Label>
           <Field
-          type='text'
-          name='Email'
-          placeholder='Your Email'
-          className="form-control"
-          
-         />
-          </FormGroup>
-          <FormGroup>
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="Your Email"
+            className="form-control"
+          />
+        </FormGroup>
+        <FormGroup>
           <Label htmlFor="Location">City and State?</Label>
           <Field
-          type='text'
-          name='Location'
-          placeholder='Where are you from?'
-          className="form-control"
-         />
-          </FormGroup>
-          <FormGroup>
-          <Label htmlFor="Comments">Comments! Tell me something good! Or don't, it's not required. Thanks for doing this it means a lot.</Label>
+            type="text"
+            name="Location"
+            id="Location"
+            placeholder="Where are you from?"
+            className="form-control"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="Comments">
+            Comments! Tell me something good! Or don't, it's not required.
+            Thanks for doing this it means a lot.
+          </Label>
           <Field
-          type='text'
-          name='Comments'
-          as="textarea"
-          rows="6"
-          placeholder='Your Message'
-          className="form-control"
-         />
-          </FormGroup>
-          <Button
-            type="submit"
-            className="formBtn"
-            style={{backgroundColor: "#29ba68"}}
-          >
+            type="text"
+            name="Comments"
+            id="Comments"
+            as="textarea"
+            rows="6"
+            placeholder="Your Message"
+            className="form-control"
+          />
+        </FormGroup>
+        <Button
+          type="submit"
+          className="formBtn"
+          style={{ backgroundColor: "#29ba68" }}
+        >
           {btnText()}
-          </Button>
-        </Form>
-      </Formik>
-    );
+        </Button>
+      </Form>
+    </Formik>
+  );
 };
 
 export default ContactForm;
