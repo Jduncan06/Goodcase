@@ -1,0 +1,17 @@
+/* Contact.css */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-gallery-slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+ /* Contact.css */
+.image-gallery-slide-wrapper {
+    height: 100% !important;
+  }
+  
