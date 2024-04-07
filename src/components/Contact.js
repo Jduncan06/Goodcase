@@ -1,31 +1,38 @@
 import React from 'react';
 import { Row, Col, Carousel, CarouselItem, CarouselControl } from "reactstrap";
-import SweaterClose from "../app/assets/headshots/SweaterClose.jpg";
-import Smile from "../app/assets/headshots/Smile.jpg";
-import Standup from "../app/assets/headshots/Standup.jpg";
+// import SweaterClose from "../app/assets/headshots/SweaterClose.jpg";
+// import Smile from "../app/assets/headshots/Smile.jpg";
+// import Standup from "../app/assets/headshots/Standup.jpg";
 import ContactForm from "../app/utils/ContactForm";
+
+// const items = [
+//   {
+//     src: SweaterClose,
+//     altText: 'Sweater Close',
+//   },
+//   {
+//     src: Smile,
+//     altText: 'Smile',
+//   },
+//   {
+//     src: Standup,
+//     altText: 'Standup',
+//   }
+// ];
 
 const items = [
   {
-    src: SweaterClose,
+    src: 'https://github.com/Jduncan06/Goodcase/blob/main/src/app/assets/img/SweaterClose.jpg?raw=true',
     altText: 'Sweater Close',
   },
   {
-    src: Smile,
+    src: 'https://github.com/Jduncan06/Goodcase/blob/main/src/app/assets/img/Smile.jpg?raw=true',
     altText: 'Smile',
   },
   {
-    src: Standup,
+    src: 'https://github.com/Jduncan06/Goodcase/blob/main/src/app/assets/img/Standup.jpg?raw=true',
     altText: 'Standup',
   }
-  // {
-  //   src: Image2,
-  //   altText: 'Image 2',
-  // },
-  // {
-  //   src: Image3,
-  //   altText: 'Image 3',
-  // }
 ];
 
 const Contact = () => {
