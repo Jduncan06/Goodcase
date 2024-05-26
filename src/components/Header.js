@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar, Collapse, NavbarToggler, Nav, NavItem } from "reactstrap";
 import { HashLink as NavLink } from "react-router-hash-link";
+import "./Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,9 @@ const Header = () => {
               Shows
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem
+            
+          >
             <NavLink
               className="nav-link"
               to="/#About"
@@ -42,7 +45,7 @@ const Header = () => {
               to="/#Video"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              Video
+              Special
             </NavLink>
           </NavItem>
         </Nav>
