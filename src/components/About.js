@@ -1,15 +1,15 @@
 import { Row, Col } from "reactstrap";
 import AboutTxt from "../features/about/AboutTxt";
-import { useMediaQuery } from 'react-responsive';
+
 import HatRedRyan from "../app/assets/headshots/hat_red_ryan.jpeg";
 
 const About = () => {
-  const isDesktop = useMediaQuery({ query: '(min-width: 756 px)' });
+  
 
-  if (isDesktop) {
+  if (window.innerWidth > 756) {
     return ( 
         <Row className="about min-vh-100 align-items-stretch" id="About" >
-        <Col xs="12" md="6 order-1">
+        <Col xs="12" md="6">
           <AboutTxt />
           </Col>
           <Col xs="12" md="6" >
@@ -21,7 +21,7 @@ const About = () => {
     return (
       <>
         <Row className="about min-vh-100 align-items-stretch" id="About">
-          <Col xs="12 order-1" md="6" >
+          <Col xs="12" md="6" >
             <img src={HatRedRyan} alt="Smile" className="aboutPic" />
           </Col>
           <Col xs="12" md="6" className="max-vh-100">
