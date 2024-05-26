@@ -1,23 +1,18 @@
 import { Row, Col } from "reactstrap";
-import Standup from "../app/assets/img/Standup.jpg";
 import ShowDates from "./ShowDates";
-import { useMediaQuery } from 'react-responsive';
+import HatRyan from "../app/assets/headshots/hat_ryan.jpeg";
+
 
 
 
 const Shows = () => {
-  const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
-  const fullHeightStyle = isDesktop ? { height: '100vh' } : {};
-
   return (
-    <Row id="Shows" className="min-vh-100 align-items-stretch">
+    <Row id="Shows" className="min-vh-100 d-flex align-items-center">
       <Col className="background d-flex flex-column justify-content-center" md="5" xs="12">
-        <img src={Standup} alt="standup" className="showsPic" />
+        <img src={HatRyan} alt="Hat Ryan" className="showsPic" />
         <h1 className="contentShows">Tour</h1>
       </Col>
-      <Col className="dates d-flex flex-column justify-content-center align-items-center" md="7" xs="12"
-        style={fullHeightStyle}
-      >
+      <Col className="dates d-flex flex-column justify-content-center align-items-center" md="7" xs="12">
         <ShowDates />
       </Col>
       <hr />

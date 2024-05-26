@@ -22,13 +22,14 @@ const ShowDates = () => {
   const show = Array.from(data);
   
   return (
+    
     <Container style={{margin:0, padding:0}}>
       {show.map((item, i) => (
         <Card
-
           className="datesCard"
           style={{ border: "1px solid #4a524d", margin:0, marginBottom:'3px', marginTop:'2px', padding:0 }}>
-          <CardBody key={i} className="cardInfo" style={{backgroundColor: "black"}}>
+            
+          <CardBody key={i} className="cardInfo" style={{backgroundColor: "black", color:"white"}}>
           <Row>
             <Col xs='3' className='dateTime'>
               <h3 style={{textStyle:'bold', color: 'darkolivegreen', margin: 0 }}>{item.month}</h3>
