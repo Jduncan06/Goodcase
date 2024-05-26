@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <div className="contact" id="Contact">
-      <Row id="Contact">
+      <Row id="Contact" className='min-vh-100 align-items-stretch'>
         <Col  xs="12" md="6">
           <Carousel
             activeIndex={activeIndex}
@@ -94,7 +94,7 @@ const Contact = () => {
         </Col>
       </Row>
       <hr />
-    </div>
+      </div>
   );
 };
 

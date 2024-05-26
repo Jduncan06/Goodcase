@@ -8,9 +8,8 @@ const About = () => {
   const window = useMediaQuery({ query: '(min-width: 576px)' });
 
   if (window) {
-    return (
-      <div className="about" id="About">
-        <Row className="row">
+    return ( 
+        <Row className="about min-vh-100 align-items-stretch" id="About" >
         <Col xs="12" md="6 order-1">
           <AboutTxt />
           </Col>
@@ -18,21 +17,20 @@ const About = () => {
             <img src={Smile} alt="Smile" className=" aboutPic" /> 
           </Col>
         </Row>
-      </div>
     );
   } else {
     return (
-      <div className="about" id="About">
-        <Row>
-          <Col xs="12 order-1" md="6">
+      <>
+        <Row className="about min-vh-100 align-items-stretch" id="About">
+          <Col xs="12 order-1" md="6" >
             <img src={Smile} alt="Smile" className=" aboutPic" />
           </Col>
-          <Col xs="12" md="6">
+          <Col xs="12" md="6" className="max-vh-100">
           <AboutTxt />
           </Col>
         </Row>
         <hr/>
-      </div>
+        </>
     );
   }
 };
