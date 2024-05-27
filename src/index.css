@@ -17,11 +17,13 @@ code {
     monospace;
     
 }
+
 .headshotBackground{
   position: relative;
+  height: 100vh;
+  object-fit: cover;
   margin-top:0;
   padding:0;
-  height: 50%;
   width: 100%;
   opacity: 65%;
 

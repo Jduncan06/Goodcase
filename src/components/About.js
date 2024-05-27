@@ -15,6 +15,7 @@ const About = () => {
           <Col xs="12" md="6" >
             <img src={HatRedRyan} alt="Smile" className="aboutPic" /> 
           </Col>
+          <hr />
         </Row>
     );
   } else {
@@ -27,8 +28,8 @@ const About = () => {
           <Col xs="12" md="6" className="max-vh-100">
           <AboutTxt />
           </Col>
+          <hr/>
         </Row>
-        <hr/>
         </>
     );
   }

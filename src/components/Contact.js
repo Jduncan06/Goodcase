@@ -12,14 +12,16 @@ const Contact = () => {
 
   const toggleModal = () => setModal(!modal); // function to toggle the modal
 
-  const br = window.innerWidth < 756 ? "order-1" : ''
+  const isDesktop = window.innerWidth > 756 
+
+  const br = !isDesktop ? "order-1" : ''
   return (
     <div className="contact" id="Contact">
       <Row id="Contact" className='min-vh-100 align-items-stretch'>
         <Col  xs="12 br" md={`6 ${br}`}>
           <img src={AngryRyan} alt="Red Hat Ryan" className="contactPic" />
         </Col>
-        <Col className="vh-100 contentContactText" xs="12" md="6" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <Col className={`${isDesktop? "vh-100": ""} contentContactText`} xs="12" md="6" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
           <br/>
           <h3>
             <strong>Manager:</strong><br/>
