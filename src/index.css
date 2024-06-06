@@ -17,11 +17,11 @@ code {
     monospace;
     
 }
+
 .headshotBackground{
   position: relative;
   margin-top:0;
   padding:0;
-  height: 50%;
   width: 100%;
   opacity: 65%;
 
@@ -208,11 +208,7 @@ code {
   opacity: 0.5;
 }
 
-.overlay{
-  opacity:0.5;
-}
 .contactPic{
-  height: 25%;
   width: 100%;
   overflow-x: hidden;
   opacity: 0.45;

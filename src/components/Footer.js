@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "reactstrap";
-import {youtube} from '../app/assets/img/youtube.png'
 
 const Footer = () => {
   return (
