@@ -21,7 +21,6 @@ code {
 .headshotBackground{
   position: relative;
   height: 100vh;
-  object-fit: cover;
   margin-top:0;
   padding:0;
   width: 100%;
