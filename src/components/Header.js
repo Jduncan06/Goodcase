@@ -34,7 +34,9 @@ const Header = () => {
           zIndex: 1000
         }}
       />
-      <Collapse isOpen={menuOpen} navbar>
+      <Collapse isOpen={menuOpen} navbar style={ isDesktop ?{
+        height: "60px",
+      }:{}}>
         <Nav
           className="ms-auto"
           navbar
