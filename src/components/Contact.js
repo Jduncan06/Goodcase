@@ -27,6 +27,9 @@ const Contact = () => {
             <strong>Manager:</strong><br/>
             Nick Harris - Avalon Management<br/>
             nharris@avalon-usa.com<br/><br/>
+            <strong>Booking Agents:</strong><br/>
+            Peter DeSantis - peter@33andwest.com<br/>
+            JJ Cassiere - jj@33andwest.com<br/><br/>
             <strong>My Email:</strong><br/>
             ryan.goodcase@gmail.com
           </h3>
