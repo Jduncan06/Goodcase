@@ -19,7 +19,7 @@ const AboutTxt = () => {
 
   const about = Array.from(data);
   return (
-    <>
+    <div className="about-container">
       <h1>My Story</h1>
       {about.map((item, i) => (
         <Col style={{margin:'2rem'}}>
@@ -28,7 +28,7 @@ const AboutTxt = () => {
       ))}
       <br />
       <br />
-    </>
+    </div>
   );
 };
 
